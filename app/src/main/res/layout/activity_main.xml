@@ -16,7 +16,6 @@
         android:text="@string/b0"
         android:background="#8380DEEA"
         android:textSize="50sp"
-        android:textDirection="firstStrongRtl"
         android:layout_above="@+id/topPanel"
         android:layout_alignParentTop="true"
         />

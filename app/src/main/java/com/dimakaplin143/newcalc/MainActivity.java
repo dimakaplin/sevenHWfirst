@@ -114,21 +114,21 @@ public class MainActivity extends AppCompatActivity {
                 Button b = (Button) v;
                 switch (man) {
                     case "/":
-                        res = Double.parseDouble(first) / Double.parseDouble(two);
+                        res = ((Double.parseDouble(first) * 10000) / (Double.parseDouble(two)* 10000)) / 10000;
                         result.setText(Double.toString(res));
                         break;
                     case "*":
-                        res = Double.parseDouble(first) * Double.parseDouble(two);
+                        res = ((Double.parseDouble(first) * 10000) * (Double.parseDouble(two) * 10000)) / 10000;
                         result.setText(Double.toString(res));
                         break;
                     case "-":
                         System.out.println(first);
                         System.out.println(two);
-                        res = Double.parseDouble(first) - Double.parseDouble(two);
+                        res = (Double.parseDouble(first) * 10000 - Double.parseDouble(two)* 10000) / 10000;
                         result.setText(Double.toString(res));
                         break;
                     case "+":
-                        res = Double.parseDouble(first) + Double.parseDouble(two);
+                        res = (Double.parseDouble(first) * 10000 - Double.parseDouble(two)* 10000) / 10000;
                         result.setText(Double.toString(res));
                         break;
                     case "%":
@@ -188,8 +188,6 @@ public class MainActivity extends AppCompatActivity {
             else if (!result.getText().toString().substring(result.getText().toString().indexOf(man)+1).contains(".")) {
                 buttonClick(b);
             }
-
-
         });
     }
 

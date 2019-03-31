@@ -1,4 +1,4 @@
-package com.dimakaplin143.newcalc;
+package com.dimakaplin143.landcalc;
 
 import org.junit.Test;
 

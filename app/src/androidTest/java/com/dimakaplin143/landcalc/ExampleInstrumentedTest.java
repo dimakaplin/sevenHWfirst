@@ -1,4 +1,4 @@
-package com.dimakaplin143.newcalc;
+package com.dimakaplin143.landcalc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.dimakaplin143.newcalc", appContext.getPackageName());
+        assertEquals("com.dimakaplin143.landcalc", appContext.getPackageName());
     }
 }

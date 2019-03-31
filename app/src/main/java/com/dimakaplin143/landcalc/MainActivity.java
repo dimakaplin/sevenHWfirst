@@ -1,4 +1,4 @@
-package com.dimakaplin143.newcalc;
+package com.dimakaplin143.landcalc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -114,11 +114,11 @@ public class MainActivity extends AppCompatActivity {
                 Button b = (Button) v;
                 switch (man) {
                     case "/":
-                        res = ((Double.parseDouble(first) * 10000) / (Double.parseDouble(two)* 10000)) / 10000;
+                        res = ((Double.parseDouble(first) * 10000) / (Double.parseDouble(two) * 10000)) / 100000000;
                         result.setText(Double.toString(res));
                         break;
                     case "*":
-                        res = ((Double.parseDouble(first) * 10000) * (Double.parseDouble(two) * 10000)) / 10000;
+                        res = ((Double.parseDouble(first) * 10000) * (Double.parseDouble(two) * 10000)) / 100000000;
                         result.setText(Double.toString(res));
                         break;
                     case "-":
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                         result.setText(Double.toString(res));
                         break;
                     case "+":
-                        res = (Double.parseDouble(first) * 10000 - Double.parseDouble(two)* 10000) / 10000;
+                        res = (Double.parseDouble(first) * 10000 + Double.parseDouble(two)* 10000) / 10000;
                         result.setText(Double.toString(res));
                         break;
                     case "%":
